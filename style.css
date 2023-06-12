@@ -151,8 +151,9 @@ footer {
   }
   
   #social {
-    display: absolute;
+    display: flex;
     justify-content: center;
+    position: absolute;
   }
   
   #social a {
@@ -170,7 +171,8 @@ footer {
   }
 
   #base {
-    display: absolute;
+    display: flex;
+    position: absolute;
     justify-content: center;
     align-items: center;
     gap: 5px;
