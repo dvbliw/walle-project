@@ -10,3 +10,14 @@ function changeContent(contentId) {
   }
 
 changeContent('home');
+
+window.addEventListener("scroll", function() {
+  var navbar = document.querySelector(".navbar");
+  var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+  
+  if (scrollTop > 0) {
+    navbar.classList.add("fixed");
+  } else {
+    navbar.classList.remove("fixed");
+  }
+});
