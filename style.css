@@ -6,19 +6,26 @@ body {
 body * {
     font-family: "inter", sans-serif;
     color: whitesmoke;
+    
   }
 
 
 nav {
     background: rgba(0, 0, 0, 0.06);
     height: 60px;
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
   }
-  
+    
+ nav.fixed {
+   position: fixed;
+   top: 0;
+   background-color: rgba(0, 0, 0, 0.06);
+ }
+
 nav i {
    color: #2bbc8a;
 }
