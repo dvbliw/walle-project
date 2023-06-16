@@ -10,7 +10,7 @@ body * {
   }
 
 
-nav {
+.navbar {
     background: rgba(0, 0, 0, 0.06);
     height: 60px;
     position: fixed;
@@ -20,24 +20,24 @@ nav {
     left: 0;
   }
     
- nav.fixed {
+ .navbar.fixed {
    position: fixed;
    top: 0;
    background-color: rgba(0, 0, 0, 0.06);
  }
 
-nav i {
+.navbar i {
    color: #2bbc8a;
 }
-  nav ul {
+ .navbar ul {
     list-style-type: none;
   }
   
-  nav ul li {
+  .navbar ul li {
     display: inline;
   }
   
-  nav ul li a {
+  .navbar ul li a {
     text-decoration: none;
     padding: 10px;
     color: #ffffff;
@@ -45,7 +45,7 @@ nav i {
     font-weight: 400;
   }
   
-  nav ul li a:hover {
+  .navbar ul li a:hover {
     background-color: #0000005d;
     color: #ffffff;
   }
