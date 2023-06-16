@@ -81,10 +81,12 @@ nav i {
 #home p {
     text-align: center;
 }
+
 #home img {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 10px;
 }
 
 #sobre p {
@@ -123,7 +125,7 @@ nav i {
     gap: 15px;
 }
 #contato ul li a {
-    color: whitesmoke;
+    color: #2bbc8a;
     font-weight: 500;
   }
 
