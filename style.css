@@ -1,5 +1,7 @@
 body {
     background: url(./assets/Background.png) no-repeat top center/cover;
+    margin: 0px;
+    padding: 0px;
     
 }
 
@@ -11,61 +13,60 @@ body * {
 
 
 .navbar {
-    background: rgba(0, 0, 0, 0.06);
-    height: 60px;
     position: fixed;
+    background: rgba(0, 0, 0, 0.06);
     top: 0;
     right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: 9999;
+    width: 100%;
   }
     
- .navbar.fixed {
-   position: fixed;
-   top: 0;
-   background-color: rgba(0, 0, 0, 0.4);
- }
-
 .navbar i {
    color: #2bbc8a;
 }
- .navbar ul {
-    list-style-type: none;
+
+  .navbar ul {
+    display: inline;
+    float: right;
+    margin: 20px;
   }
   
-  .navbar ul li {
+  .navbar li {
     display: inline;
+    margin: 0px 5px;
   }
   
   .navbar ul li a {
     text-decoration: none;
-    padding: 10px;
     color: #ffffff;
     font-family: "inter", sans-serif;
     font-weight: 400;
+
+    transition: background 0.2s;
+    border-radius: 20%;
+    padding: 10px;
   }
+
   
   .navbar ul li a:hover {
-    background-color: #0000005d;
+    background: #0000006a;
     color: #ffffff;
+  }
+  
+  a {
+    text-decoration: none;
   }
 
 #container {
     width: 100%;
-    max-width: 700px;
-    margin: auto;
-    margin-top: 70px;
-
   }
 
 #avatar {
     text-align: center;
-    padding: 24px;
+    margin: 20px;
   }
   
 #avatar img {
-    width: 112px;
+    width: 115px;
     align-items: center;
   }
 
@@ -77,84 +78,103 @@ body * {
     border-radius: 9px;
     backdrop-filter: blur(4px);
     -webkit-backdrop-filter: blur(4px);
-    height: auto;
-    padding: 0px 20px;
+    width: 60%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 10px;
 }
 
 #box h1,h2 {
     text-align: center;
-    margin-top: 20px ;
 }
 
 #home p {
     text-align: center;
+    font-size: 1em;
 }
 
 #home img {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 10px;
+    margin: auto;
+    padding: 30px;
 }
 
 #sobre p {
     text-align: center;
+    margin: 0px;
 }
 
 #sobre img {
-    width: 200px;
+    width: 300px;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    padding: 30px;
+    margin: auto;
+    clip-path: polygon(0% 20%, 100% 20%, 100% 80%, 0% 80%);
 }
 
-#sobre ul {
+#portfolio p {
+  text-align: center;
+  margin: 10px;
+}
+
+#portfolio li {
     list-style: none;
     display: flex;
     flex-direction: column;
   }
 
-#sobre ul li a {
+#portfolio a {
     color: #2bbc8a;
     font-weight: 500;
   }
-
-#contato ul {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-  }
-
-#contato li {
-    display: flex;
-    justify-content: left;
-    align-items: center;  
-    
-    gap: 15px;
-}
-#contato ul li a {
-    color: #2bbc8a;
-    font-weight: 500;
-  }
-
-#contato img {
+  #contato {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 10px;
-}
+    margin: auto;
+    padding: 10px;
+  }
+  
+  .contato-geral {
+    display: flex;
+    flex-direction: row;
+    padding: 0px;
+    margin-bottom: 5px;
+    font-size: 18px;
+    text-align: center;
+  }
+  
+  .contato-org {
+    display: flex;
+    align-items: center;
+    margin: 0px 10px; /* Reduzimos a margem para evitar sobreposições */
+  }
+  
+  .contato-org p {
+    margin: 10px;
+  }
+  
+  .contato-org a {
+    color: #2bbc8a;
+    font-weight: 500;
+  }
+  
+  .contato-org ion-icon {
+    color: #2bbc8a;
+    font-weight: 500;
+  }
+  
+  .contato img {
+    /* width: 300px; Removemos a largura fixa */
+  }
 
 footer {
-    position: relative;
-    justify-content: center;
-    text-align: center;
-    bottom: 0;
-    padding: 30px;
+    position: fixed;
+    bottom: 0px;
+    left: 50%;
+    padding: 0px;
     font-size: 14px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    transform: translateX(-50%);
+    width: 300px;
   }
   
   #links {
@@ -184,10 +204,10 @@ footer {
   }
 
   #base {
-    display: flex;
     justify-content: center;
     align-items: center;
     gap: 5px;
-    font-size: 17px;
+    font-size: 18px;
+    padding: 4px;
   }
   

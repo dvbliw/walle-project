@@ -15,13 +15,13 @@
     <title>Hi, My Name is Walef</title>
     <link rel="icon" type="image/x-icon" href="./assets/favicon.ico">
 </head>
+
 <body>
-
-
     <nav class="navbar">
         <ul>
             <li><a href="#" onclick="changeContent('home')"> <i># </i>HOME</a></li>
             <li><a href="#" onclick="changeContent('sobre')"> <i># </i>SOBRE MIM</a></li>
+            <li><a href="#" onclick="changeContent('portfolio')"><i># </i>PORTFÓLIO</a></li>
             <li><a href="#" onclick="changeContent('contato')"><i># </i>CONTATO</a></li>
         </ul>
     </nav>
@@ -30,53 +30,59 @@
         <div id="avatar">
                 <img src="./assets/avatar1.png" alt="Foto do perfil" />
         </div>
-        
         <div id="box">
             <div id="home">
                 <h1>Walef Xavier</h1>
-                <p><i>Estudante de Sistemas de Informação, Desenvolvimento Web, Cyber Security e Bug Bounty Hunter nas horas vagas</i></p>
+                <p><i>Estudante de Sistemas de Informação, Desenvolvimento Web,<br>Analista de Sistemas, Cyber Security e Bug Hunter nas horas vagas.</i></p>
 
                 <img src="./assets/hkkkk.gif" alt="rsrsxD">
-            </div>
+        </div>
 
             <div id="sobre">
             <h2>SOBRE MIM</h2>
-                <p>Olá a todos! Meu nome é Walef e sou estudante de sistemas de informação da <a hre="https://unidesc.edu.br/">UNIDESC</a> e pesquisador em inicio de carreira em segurança. <br> <br> No meu tempo livre, sou um caçador de recompensas por bugs e jogo alguns CTFs. Agora estou profundamente envolvido na segurança cibernética tendo estudado com mais frequencia segue alguns write up de maquinas realizadas.</p>
+                <p>Olá a todos! Meu nome é Walef e sou estudante de sistemas de informação da <a hre="https://unidesc.edu.br/">UNIDESC</a> e pesquisador em inicio de carreira em segurança. <br> <br> No meu tempo livre, sou um caçador de recompensas por bugs e jogo alguns CTFs. Agora estou profundamente envolvido na segurança cibernética tendo estudado com mais frequencia.</p>
 
-                <ul>
-                    <li>
-                        <p><a href="https://medium.com/@jDABLIW/crowsec-hijacking-write-up-97cf840f68a9" target="_blank"> Write Up de Maquina Hijacking CTF - CrowSec</a></p>
-                    </li>
-                    <li>
-                        <p><a href="https://medium.com/@jDABLIW/crowsec-poisoning-write-up-68aca1a4e796" target="_blank"> Write Up de Maquina Poisoning CTF - CrowSec</a></p>
-                    </li>
-                    <li>
-                        <p><a href="https://medium.com/@jDABLIW/crowsec-horizont-write-up-86bf767f21ea" target="_blank"> Write Up de Maquina Horizont  CTF - CrowSec</a></p>
-                    </li>
-                    <li>
-                        <p><a href="https://github.com/dvbliw" target="_blank"> Portfólio Github</a></p>
-                    </li>
-                </ul>
                 <img src="./assets/hakk.gif" alt="hakk">
             </div>
 
-            <div id="contato">
-                <h2>CONTATO</h2>
+            <div id="portfolio">
+                <h2>PORTFÓLIO</h2>
+                    <p>Aqui está um pouco dos trabalhos desenvolvidos por mim,<br> e alguns artigos escritos no medium.</p>
     
                     <ul>
                         <li>
-                            <p><a href="http://github.com/dvbliw" target="_blank"> GITHUB</a></p>
-                            <ion-icon name="logo-github"></ion-icon>
+                            <p><a href="https://medium.com/@jDABLIW/crowsec-hijacking-write-up-97cf840f68a9" target="_blank"> Write Up de Maquina Hijacking CTF - CrowSec</a></p>
                         </li>
                         <li>
-                            <p><a href="https://www.linkedin.com/in/walefxavier/" target="_blank"> LINKEDIN</a></p>
-                            <ion-icon name="logo-linkedin"></ion-icon>
+                            <p><a href="https://medium.com/@jDABLIW/crowsec-poisoning-write-up-68aca1a4e796" target="_blank"> Write Up de Maquina Poisoning CTF - CrowSec</a></p>
                         </li>
                         <li>
-                            <p><a href="http://instagram.com/walle1st" target="_blank"> INSTAGRAM</a></p>
-                            <ion-icon name="logo-instagram"></ion-icon>
+                            <p><a href="https://medium.com/@jDABLIW/crowsec-horizont-write-up-86bf767f21ea" target="_blank"> Write Up de Maquina Horizont  CTF - CrowSec</a></p>
+                        </li>
+                        <li>
+                            <p><a href="https://github.com/dvbliw" target="_blank"> Portfólio Github</a></p>
                         </li>
                     </ul>
+                </div>
+
+            <div id="contato">
+                <h2>CONTATO</h2>
+                <div class="contato-geral">
+                        <div class="contato-org">
+                            <p><a href="http://github.com/dvbliw" target="_blank"> GITHUB</a></p>
+                            <ion-icon name="logo-github"></ion-icon>
+                        </div>
+
+                        <div class="contato-org">
+                            <p><a href="https://www.linkedin.com/in/walefxavier/" target="_blank"> LINKEDIN </a></p>
+                            <ion-icon name="logo-linkedin"></ion-icon>
+                        </div>
+
+                        <div class="contato-org">
+                            <p><a href="http://instagram.com/walle1st" target="_blank"> INSTAGRAM</a></p>
+                            <ion-icon name="logo-instagram"></ion-icon>
+                        </div>
+                    </div>
                     <img src="./assets/haktel.gif" alt="hakk">
                 </div>
         </div>
@@ -85,21 +91,31 @@
 
     </div>
 
+
     <footer>
 
         <div id="links">
             <div id="social">
-                <a href="http://github.com/dvbliw" target="_blank">
-                    <ion-icon name="logo-github"></ion-icon>
-                </a>
-                <a href="http://instagram.com/walle1st" target="_blank">
-                    <ion-icon name="logo-instagram"></ion-icon>
-                </a>
+                
+                    <a href="http://github.com/dvbliw" target="_blank">
+                        <ion-icon name="logo-github"></ion-icon>
+                    </a>
+                
+
+                
+                    <a href="http://instagram.com/walle1st" target="_blank">
+                        <ion-icon name="logo-instagram"></ion-icon>
+                    </a>
+                
+
+                
                 <a href="https://www.linkedin.com/in/walefxavier/" target="_blank">
                 <ion-icon name="logo-linkedin"></ion-icon>
                 </a>
-                </div>    
-            </div>
+                
+
+            </div>    
+        </div>
     
             <div id="base">
                 Feito com
@@ -109,7 +125,6 @@
                 por <a href="http://github.com/dvbliw" target="_blank">Walef Xavier</a>
             </div>
     </footer>
-
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
